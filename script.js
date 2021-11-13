@@ -24,8 +24,9 @@ function randomAdjective() {
     
     function firstName(){
         const prompt = require('prompt-sync')();
-        const name = prompt('what is your first name?');
-      return name;
+        const name = prompt(" Welcome to Erik's ID generator\n" + 
+        "what is your first name? ");
+     return name;
     
     }
     function randomDigits(){
@@ -33,10 +34,16 @@ function randomAdjective() {
     const digits = Math.floor(Math.random()*(999-100+1)+100);
     return digits;
     }
+/*
+    function join(){
+        const array = [randomDigits(), , randomAdjective()];
+    }
     
-    console.log(randomDigits());
-    console.log(randomAdjective());
-    console.log(firstName());
+    */
+
+    console.log("your Id is:" + firstName());
+
+ 
     
     
     
