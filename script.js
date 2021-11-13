@@ -23,8 +23,9 @@ function randomAdjective() {
     }
     
     function firstName(){
-        var name = window.prompt("Enter your first name: ");
-    return name;
+        const prompt = require('prompt-sync')();
+        const name = prompt('what is your first name?');
+      return name;
     
     }
     function randomDigits(){
