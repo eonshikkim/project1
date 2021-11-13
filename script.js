@@ -24,9 +24,10 @@ function randomAdjective() {
     
     function firstName(){
         const prompt = require('prompt-sync')();
-        let name = prompt(" Welcome to Erik's ID generator  -----------------------  what is your first name? ");
+        console.log(" Welcome to Erik's ID generator  -----------------------  what is your first name? ");
+        let name = prompt();
         if(name < 3 || name > 10){
-            alert("Name can't be shorten than 3 or longer than 10");
+           return "Name can't be shorten than 3 or longer than 10";
         }
         else{
      return name;
