@@ -24,20 +24,27 @@ function randomAdjective() {
     
     function firstName(){
         const prompt = require('prompt-sync')();
-        const name = prompt(" Welcome to Erik's ID generator\n -----------------------\n what is your first name? ");
+        let name = prompt(" Welcome to Erik's ID generator   -----------------------what is your first name? ");
+        if(name < 3 || name > 10){
+            return "Name can't be shorten than 3 or longer than 10";
+        }
+        else{
      return name;
-    
+        }
     }
+
+  
     function randomDigits(){
     
     const digits = Math.floor(Math.random()*(999-100+1)+100);
     return digits;
     }
+function join(){
+    const join = randomAdjective() + firstName() + randomDigits();
+return join;
+}
 
-
-    console.log("Your id is: " + randomAdjective() + firstName() + randomDigits());
-
- 
+    console.log("Your id is: " + join());
     
     
     
