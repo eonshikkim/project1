@@ -27,9 +27,9 @@ function randomAdjective() {
         console.log(" Welcome to Erik's ID generator  \n ----------------------- \n what is your first name? ");
         const name = prompt();
         while(name.length < 3 || name.length > 10){
-           console.log("Name can't be shorten than 3 or longer than 10");
-           const name = prompt();
-           break;
+           console.log("Name can't be shorten than 3 or longer than 10 \n Please type again");
+           const name2 = prompt();
+           return name2;
         }
     
      return name;
