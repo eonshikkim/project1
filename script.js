@@ -24,10 +24,11 @@ function randomAdjective() {
     
     function firstName(){
         const prompt = require('prompt-sync')();
-        console.log(" Welcome to Erik's ID generator  -----------------------  what is your first name? ");
-        let name = prompt();
-        if(name < 3 || name > 10){
-           return "Name can't be shorten than 3 or longer than 10";
+        console.log(" Welcome to Erik's ID generator  \n ----------------------- \n what is your first name? ");
+        const name = prompt();
+        if(name.length < 3 || name.length > 10){
+           console.log("Name can't be shorten than 3 or longer than 10");
+       
         }
         else{
      return name;
@@ -40,6 +41,7 @@ function randomAdjective() {
     const digits = Math.floor(Math.random()*(999-100+1)+100);
     return digits;
     }
+
 function join(){
     const join = randomAdjective() + firstName() + randomDigits();
 return join;
