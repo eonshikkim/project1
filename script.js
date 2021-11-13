@@ -26,13 +26,14 @@ function randomAdjective() {
         const prompt = require('prompt-sync')();
         console.log(" Welcome to Erik's ID generator  \n ----------------------- \n what is your first name? ");
         const name = prompt();
-        if(name.length < 3 || name.length > 10){
+        while(name.length < 3 || name.length > 10){
            console.log("Name can't be shorten than 3 or longer than 10");
-       
+           const name = prompt();
+           break;
         }
-        else{
+    
      return name;
-        }
+        
     }
 
   
