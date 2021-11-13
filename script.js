@@ -24,7 +24,7 @@ function randomAdjective() {
     
     function firstName(){
         const prompt = require('prompt-sync')();
-        const name = prompt(" Welcome to Erik's ID generator\n what is your first name? ");
+        const name = prompt(" Welcome to Erik's ID generator\n -----------------------\n what is your first name? ");
      return name;
     
     }
